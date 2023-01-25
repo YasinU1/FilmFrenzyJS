@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <title>Film Frenzy</title>
+  </head>
+  <body>
+    <!-- NavBar and links -->
+    <nav class="navHeader">
+      <div class="navWrapper">
+        <h2 class="websiteTitle">
+          <img src="./img/Screenshot 2023-01-21 at 20.30.05.png" alt="" style="
+          width: 13%;
+          margin: -17px;
+      ">
+          <span class="navLogoTitle">Film Frenzy</span>
+        </h2>
+        <div class="navLinksContainer">
+          <ul class="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="login.html">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- The movie overlay, video and information for new release -->
+    <header>
+      <div class="newReleaseContainer">
+        <video width="100%" class="newReleaseVideo" autoplay muted loop>
+          <source src="img/2023-01-20 00-14-57 copy.mp4" type="video/mp4" codecs="avc1, mp4a"/> 
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="newReleaseInfo">
+          <h3><span class="knivesOutTitle">Knives</span> Out</h3>
+          <p>
+            Five long-time firends are invited to the Greek island home of
+            billionaire Miles Bron. All five know Bron from way back and owe
+            thier current wealth, fame and careers to hime. The main event is a
+            murder weekend game with Bron to be the victim...
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Trending movie cards displaying the top movies and data abstracted from the OMBD API -->
+    <section>
+      <div id="movies" class="categoryList">
+        <h3 class="categoryTitle">Trending Movies</h3>
+          <div class="swiper-wrapper trendingContainer"></div>
+      </div>
+    </section>
+    <!-- Movie of the Day section, automated cycle upon page load that presents user with a new movie everytime -->
+    <section id="motd">
+      <div id="tvshows" class="categoryList">
+        <h3 class="categoryTitle">Movie of the Day</h3>
+        <img id="motd-poster" alt="">
+        <div class="newReleaseInfo">
+          <!-- The h3 and p elements will be filled with info through our automated Javascript -->
+          <h3 id="motd-title"></h3>
+          <p id="motd-p">
+          </p>
+        </div>
+      </div>
+    </section>
+     <!-- Footer -->
+     <footer id="footer">
+      <ul class="copyright">
+        <li>&copy; Vodafone</li>
+        <li>Network as a Platform</li>
+      </ul>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+

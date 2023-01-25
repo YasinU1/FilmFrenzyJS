@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <title>Film Frenzy</title>
+  </head>
+  <body>
+   <!-- NavBar and links -->
+    <nav class="navHeader">
+      <div class="navWrapper">
+        <h2 class="websiteTitle">
+          <span class="navLogoTitle">Film Frenzy</span>
+        </h2>
+        <div class="navLinksContainer">
+          <ul class="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="login.html">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <!-- Trending movie cards displaying the top movies and data abstracted from the OMBD API -->
+      <div id="movies" class="categoryList">
+        <h3 class="categoryTitle">Our Favourites</h3>
+          <div class="swiper-wrapper favouritesContainer"></div>
+      </div>
+      <!-- Top Shows card displaying the top shows and data abstracted from the OMBD API -->
+      <div id="tvshows" class="categoryList">
+        <h3 class="categoryTitle">Top Shows</h3>
+          <div class="swiper-wrapper topshowsContainer"></div>
+      </div>
+    </section>
+     <!-- Footer -->
+     <footer id="footer">
+        <ul class="copyright">
+          <li>&copy; Vodafone</li>
+          <li>Network as a Platform</li>
+        </ul>
+      </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
